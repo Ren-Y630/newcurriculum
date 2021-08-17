@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+
+    .wrapper{
+        max-width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .en-title {
+        display: none;
+    }
+
+    .ja-title {
+        font-size: 2.8rem;
+    }
+
+/*-----------------------------------------------
+header
+------------------------------------------------*/
+
+    .header {
+        background-image: url(../img/mainvisual-sp.jpg);
+        margin-bottom: 80px;
+    }
+
+    .header-filter {
+        padding: 20px;
+    }
+
+    .onlinestore {
+        left: 20px;
+        bottom: 20px;
+    }
+
+/*-----------------------------------------------
+news
+------------------------------------------------*/
+    .news {
+
+    }
+
+    .news-list:nth-of-type(n+4) {
+        display: none;
+    }
+
+
+
+
+
+
+}
