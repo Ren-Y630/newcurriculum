@@ -1,0 +1,356 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  /*ベースを10pxにしています*/
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #333333;
+  font-size: 1.6rem;
+  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 1.4rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+a:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.content-wrap {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.cmn-btn {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cmn-btn a {
+  position: relative;
+  font-size: 1.4rem;
+}
+
+.cmn-btn a::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  left: 0;
+  bottom: -1px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.cmn-btn a:hover::after {
+  width: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*-----------------------------------------------
+header
+------------------------------------------------*/
+.header {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.header .site-title {
+  padding-top: 20px;
+  padding-bottom: 16.8px;
+}
+
+.header .header-nav {
+  background: #333333;
+}
+
+.header .header-nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 40px;
+}
+
+.header .header-nav .nav-list .nav-item {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.header .header-nav .nav-list .nav-item a {
+  color: #FFFFFF;
+}
+
+.header .header-nav .nav-list .nav-item:nth-of-type(n+2) {
+  margin-left: 60px;
+}
+
+.header .header-nav .nav-list .nav-item::after {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 3px;
+  background-color: #fff;
+  left: 0;
+  bottom: 4px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.header .header-nav .nav-list .nav-item:hover::after {
+  width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*-----------------------------------------------
+pickup
+------------------------------------------------*/
+.pickup {
+  margin-bottom: 60px;
+}
+
+.pickup .pickup-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pickup .pickup-list .pickup-item {
+  width: 32%;
+}
+
+.pickup .pickup-list .pickup-item .pickup-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.pickup .pickup-list .pickup-item .pickup-box .pickup-text {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.pickup .pickup-list .pickup-item .pickup-box .pickup-image {
+  margin-bottom: 10px;
+}
+
+/*-----------------------------------------------
+main
+------------------------------------------------*/
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 138px;
+}
+
+.side-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.main {
+  max-width: 760px;
+  margin-right: 50px;
+}
+
+.main .main-list .main-item {
+  margin-bottom: 85px;
+}
+
+.main .main-list .main-item .main-item-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.main .main-list .main-item .time-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.main .main-list .main-item .time-box time {
+  font-size: 1.4rem;
+  margin-right: 30px;
+}
+
+.main .main-list .main-item .time-box p {
+  font-size: 1.4rem;
+}
+
+.main .main-list .main-item .main-image {
+  max-width: 760px;
+  margin-bottom: 20px;
+}
+
+.main .main-list .main-item .main-text {
+  padding: 0 40px;
+  margin-bottom: 30px;
+}
+
+/*-----------------------------------------------
+sidebar
+------------------------------------------------*/
+.sidebar {
+  max-width: 345px;
+}
+
+.sidebar .profile {
+  margin-bottom: 50px;
+}
+
+.sidebar .profile .profile-image {
+  max-width: 130px;
+  margin: 0 auto 30px;
+}
+
+.sidebar .profile .profile-image img {
+  border-radius: 50%;
+}
+
+.sidebar .profile .profile-text {
+  font-size: 1.4rem;
+}
+
+.sidebar .ranking {
+  margin-bottom: 68px;
+}
+
+.sidebar .ranking .ranking-list .ranking-item {
+  margin-bottom: 26px;
+}
+
+.sidebar .ranking .ranking-list .ranking-item .ranking-item-inner .ranking-image {
+  max-width: 345px;
+  margin-bottom: 14px;
+}
+
+.sidebar .ranking .ranking-list .ranking-item .ranking-item-inner .ranking-text {
+  font-size: 1.4rem;
+}
+
+.archive .archive-list .archive-item {
+  border-top: 1px solid #777777;
+  padding: 23px;
+}
+
+.archive .archive-list .archive-item:last-of-type {
+  border-bottom: 1px solid #777777;
+}
+
+/*-----------------------------------------------
+footer
+------------------------------------------------*/
+.footer-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.footer {
+  background-color: #F7F7F7;
+  padding-top: 53px;
+}
+
+.footer .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 90px;
+}
+
+.footer .content .footer-about {
+  width: 32%;
+}
+
+.footer .content .footer-about .about-text {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  max-width: 345px;
+}
+
+.footer .content .footer-about .about-list .about-item {
+  font-size: 1.4rem;
+}
+
+.footer .content .footer-about .about-list .about-item:nth-last-of-type(n+2) {
+  margin-bottom: 14px;
+}
+
+.footer .content .footer-menu {
+  width: 32%;
+}
+
+.footer .content .footer-menu .menu-list .menu-item {
+  text-transform: uppercase;
+  border-top: 1px solid #777777;
+  padding: 19px;
+}
+
+.footer .content .footer-menu .menu-list .menu-item a {
+  font-size: 1.4rem;
+}
+
+.footer .content .footer-menu .menu-list .menu-item:last-of-type {
+  border-bottom: 1px solid #777777;
+}
+
+.footer .content .footer-sns {
+  width: 32%;
+}
+
+.footer .content .footer-sns .twitter-timeline {
+  width: 100%;
+}
+
+.footer small {
+  display: block;
+  text-align: center;
+  padding-bottom: 12px;
+}
+/*# sourceMappingURL=style.css.map */
