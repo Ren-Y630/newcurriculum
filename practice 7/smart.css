@@ -1,0 +1,130 @@
+@media screen and (max-width: 600px) {
+
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+/*-----------------------------------------------
+header
+------------------------------------------------*/
+    .header {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 16px;
+    }
+
+    .header-title {
+        margin-bottom: 10px;
+    }
+
+    .header-logo {
+        text-align: center;
+        width: 143px;
+        height: 36px;
+    }
+
+
+    .header-nav {
+        margin: 0;
+    }
+
+
+/*-----------------------------------------------
+about
+------------------------------------------------*/
+    .about {
+        margin-bottom: 61px;
+    }
+
+    .sub-title {
+        margin-bottom: 37px;
+    }
+
+    .sp-br {
+        display: block;
+    }
+
+    .about-list {
+        margin-bottom: 51px;
+    }
+
+/*-----------------------------------------------
+works
+------------------------------------------------*/
+    .works {
+        margin-bottom: 77px;
+    }
+
+    .works-image-list {
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+
+    .works-image-item {
+        width: 345px;
+        height: 225px;
+        margin-bottom: 23px;
+    }
+
+    .works-image-item:last-of-type {
+        margin: 0;
+    }
+
+/*-----------------------------------------------
+news
+------------------------------------------------*/
+    .news {
+        margin-bottom: 77px;
+    }
+
+    .news-item {
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid #C8C8C8;
+        padding: 19px 0 15px;
+    }
+
+    .news-item > dt {
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-bottom: 5px;
+    }
+
+    .news-item > dd {
+        margin-left: 10px;
+        margin-right: 20px;
+        line-height: 1.5;
+    }
+
+/*-----------------------------------------------
+contact
+------------------------------------------------*/
+    .contact {
+    margin-bottom: 70px;
+    }
+
+
+
+    .form-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 14px;
+    }
+
+    .input-text {
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    textarea {
+        margin-top: 5px;
+        width: 100%;
+    }
+
+
+
+
+
+}

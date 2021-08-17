@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%; /*ベースを10pxにしています*/
+}
+
+body {
+    color: #24292E;
+    font-size: 1.44rem;
+    font-family: 'Meiryo', serif;
+
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+a {
+    color: #2b2a27;
+    text-decoration: none;
+}
+
+.section-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 4%;
+    text-align: center;
+}
+
+.section-title {
+    display: inline-block;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 70px;
+    padding: 5px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #333;
+}
+
+/* sns アイコン */
+.header-item-sns {
+    color: #333;
+}
+
+/*-----------------------------------------------
+header
+------------------------------------------------*/
+.header {
+    display: flex;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 120px 20px;
+}
+.header a {
+    font-weight: bold;
+    transition: .3s;
+}
+.header a:hover {
+    opacity: .5;
+    transition: .3s;
+}
+.header-title {
+
+}
+.header-logo {
+    width: 120px;
+    height: 27px;
+}
+.header-nav {
+margin-left: auto;
+}
+.header-list {
+    display: flex;
+
+}
+.header-item {
+
+}
+.header-item:nth-last-of-type(n+2) {
+    margin-left: 33px;
+}
+.header-item-sns {
+    margin-left: 34px;
+}
+
+/*-----------------------------------------------
+fv
+------------------------------------------------*/
+.fv {
+    min-height: 420px;
+    /* background-position: center;
+    background-size: cover; */
+    margin-bottom: 87px;
+}
+.fv-image {
+    /* height: 420px; */
+}
+.fv-image > img {
+    min-height: 420px;
+    width: 100vw;
+    object-fit: cover;
+}
+
+/*-----------------------------------------------
+about
+------------------------------------------------*/
+.about {
+    margin-bottom: 130px;
+}
+
+.sub-title {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    text-align: left;
+}
+
+.sp-br {
+    display: none;
+}
+
+.about-list {
+    margin-bottom: 40px;
+}
+
+.row {
+    display: flex;
+    /* justify-content: left; */
+    transition: .3s;
+}
+
+.row a:hover {
+    opacity: 0.3;
+    transition: .3s;
+}
+
+.row > dt {
+    margin-right: 10px;
+}
+
+.row:nth-of-type(n+2) {
+    margin-top: 5px;
+}
+
+.about-text {
+    line-height: 1.5;
+}
+/*-----------------------------------------------
+works
+------------------------------------------------*/
+.works {
+    margin-bottom: 130px;
+}
+
+.works-wrap {
+
+}
+
+.works-image-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.works-image-item {
+    width: 31%;
+    margin-bottom: 23px;
+}
+
+/*-----------------------------------------------
+news
+------------------------------------------------*/
+.news {
+margin-bottom: 130px;
+}
+
+.news-content {
+
+}
+
+.news-list {
+
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #C8C8C8;
+    padding: 17px 0;
+}
+
+.news-item:nth-of-type(1) {
+    border-top: 1px solid #C8C8C8;
+}
+
+.news-item > dt {
+    margin-left: 10px;
+    margin-right: 90px;
+}
+
+
+
+
+
+/*-----------------------------------------------
+contact
+------------------------------------------------*/
+.contact {
+margin-bottom: 130px;
+}
+
+.form-wrapper {
+
+}
+
+.form-list {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.form-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-label {
+    width: 10%;
+}
+
+input, textarea {
+    resize: none;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border: 1px solid #C8C8C8;
+    width: 100%;
+    color: #24292E;
+    box-sizing: border-box;
+}
+
+.input-text {
+    max-width: 723px;
+    width: 90%;
+    line-height: 43px;
+    padding: 0 8px;
+    letter-spacing: 1.5px;
+}
+
+textarea {
+    max-width: 723px;
+    width: 90%;
+    height: 160px;
+    padding: 10px 10px;
+    letter-spacing: 1.5px;
+}
+
+.submit-btn {
+    display: block;
+    width: 235px;
+    line-height: 60px;
+    margin: 0 auto;
+    background-color: #24292E;
+    box-shadow: 0 0 6px #1b1310;
+    border-radius: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s;
+    border: none;
+}
+
+.submit-btn:hover {
+    opacity: .7;
+    transition: .3s;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------
+footer
+------------------------------------------------*/
+.footer {
+    background-color: #24292E;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 13px 0;
+}
+
