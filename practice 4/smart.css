@@ -1,0 +1,18 @@
+@media screen and (max-width: 375px) {
+
+
+    #diary {
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .photo-list {
+        flex-direction: column;
+    }
+
+    .photo-item {
+        width: 100%;
+    }
+
+}
