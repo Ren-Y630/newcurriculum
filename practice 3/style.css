@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%; /*ベースを10pxにしています*/
+}
+
+body {
+    background-color: #f4f9ff;
+    color: #333;
+    font-size: 1.4rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* サイト全体のコンテンツ幅を設定 */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* 中のコンテンツ部分の最大幅を設定 */
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    /* margin-top: 65px; */
+    margin-bottom: 35px;
+    display: inline-block;
+    border-bottom: 1px solid #000;
+    text-transform: uppercase;
+}
+
+/*-------------------------------------------
+header
+-------------------------------------------*/
+#header {
+    margin-top: 60px;
+}
+
+.header-logo {
+    display: block;
+    width: 160px;
+    line-height: 1;
+    margin-bottom: 21px;
+}
+
+/*-------------------------------------------
+mainvisual
+-------------------------------------------*/
+#mainvisual {
+    /* height: 400px; */
+    margin-bottom: 60px;
+}
+
+/*-------------------------------------------
+index
+-------------------------------------------*/
+#index {
+    background-color: #DEDEDE;
+    padding: 60px;
+    margin-bottom: 60px;
+}
+
+.index-wrap {
+    /* display: flex;
+    justify-content: center; */
+    width: 80%;
+    border: 1px solid #333;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.index-list{
+    margin: 0;
+    padding: 0;
+    display: table;
+    margin: 0 auto;
+}
+
+.index-item:nth-child(n+2) {
+    margin-top: 20px;
+}
+
+/*-------------------------------------------
+picture
+-------------------------------------------*/
+#picture {
+
+}
+
+.picture-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin: 30px 0 45px 0; */
+}
+
+.picture-item {
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+.picture-item img {
+    vertical-align: bottom;
+}
+
+/*-------------------------------------------
+detail
+-------------------------------------------*/
+#detail {
+    background-color: #DEDEDE;
+    padding: 0 76px 50px 60px;
+}
+
+.detail-content {
+    display: flex;
+}
+
+.detail-list {
+    text-align: left;
+    margin-bottom: 0;
+    width: 40%;
+    border-right: 1px solid #333333;
+    padding-right: 40px;
+}
+
+.detail-list-parent {
+    font-weight: bold;
+}
+
+.detail-list-parent:nth-child(n+2) {
+    margin-top: 15px;
+}
+
+.detail-list-child {
+    margin: 0;
+}
+
+.detail-text {
+    margin-left: 40px;
+    text-align-last: left;
+    width: 65%;
+}
+
+.detail-text p {
+    margin-bottom: 24px;
+}
+
+.link {
+    color: #333;
+    border-bottom:  1px solid #000;
+}
+
+.link:hover {
+    opacity: 0.8;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer {
+    text-align: center;
+    margin-top: 78px;
+    padding-bottom: 17px;
+}
